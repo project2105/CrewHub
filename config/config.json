@@ -1,8 +1,8 @@
 {
   "development": {
     "username": "root",
-    "password": null,
-    "database": "exampledb",
+    "password": "root",
+    "database": "passport_demo",
     "host": "localhost",
     "dialect": "mysql"
   },
