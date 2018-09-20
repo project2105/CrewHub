@@ -2,27 +2,63 @@
 <html lang="en">
 
 <head>
-    <title>Passport Authentication</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/lumen/bootstrap.min.css">
-    <link href="stylesheets/style.css" rel="stylesheet">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>SignUp Page</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap_template/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="bootstrap_template/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="bootstrap_template/vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- Custom styles for this template -->
+    <link href="bootstrap_template/css/landing-page.min.css" rel="stylesheet">
+
 </head>
 
 <body>
-    <nav class="navbar navbar-default">
-        <div class="container-fluid">
-            <div class="navbar-header">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-light bg-light static-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Crew Hub <span class="text-danger">Chicago</span></a>
+            <div>
+                <!--<a class="btn btn-danger text-lg-left" href="#">Sign Up</a>
+                <a class="btn btn-danger" href="#">Login</a>-->
             </div>
         </div>
     </nav>
+
+    <section class="call-to-action text-white text-center">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-9 mx-auto">
+                    <!--<h2 class="mb-4">Find your Ocean</h2>-->
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <br>
+    <!--<section class="features-icons bg-light text-center">-->
     <div class="container">
-        <div class="row">
+        <div class="row justify-content-center">
             <div class="col-md-6 col-md-offset-3">
                 <h2>Sign Up Form</h2>
                 <form class="signup">
                     <div class="form-group">
-                        <label for="exampleInputEmail1">Email address</label>
+                        <label for="exampleInputEmail1">User Name</label>
                         <input type="email" class="form-control" id="email-input" placeholder="Email">
                     </div>
                     <div class="form-group">
@@ -33,6 +69,10 @@
                         <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
                         <span class="sr-only">Error:</span> <span class="msg"></span>
                     </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Bio</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Tell us about you" rows="3"></textarea>
+                    </div>
                     <button type="submit" class="btn btn-default">Sign Up</button>
                 </form>
                 <br />
@@ -40,6 +80,73 @@
             </div>
         </div>
     </div>
+    <!--</section>-->
+
+
+
+    <!-- Call to Action -->
+    <section class="call-to-action text-white text-center">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-9 mx-auto">
+                    <h2 class="mb-4">Find your Ocean</h2>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 h-100 text-center text-lg-left my-auto">
+                    <ul class="list-inline mb-2">
+                        <li class="list-inline-item">
+                            <a href="#">About</a>
+                        </li>
+                        <li class="list-inline-item">&sdot;</li>
+                        <li class="list-inline-item">
+                            <a href="#">Contact</a>
+                        </li>
+                        <li class="list-inline-item">&sdot;</li>
+                        <li class="list-inline-item">
+                            <a href="#">Terms of Use</a>
+                        </li>
+                        <li class="list-inline-item">&sdot;</li>
+                        <li class="list-inline-item">
+                            <a href="#">Privacy Policy</a>
+                        </li>
+                    </ul>
+                    <p class="text-muted small mb-4 mb-lg-0">&copy; Crew Hub Chicago 2018. All Rights Reserved.</p>
+                </div>
+                <div class="col-lg-6 h-100 text-center text-lg-right my-auto">
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item mr-3">
+                            <a href="#">
+                                <i class="fab fa-facebook fa-2x fa-fw"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item mr-3">
+                            <a href="#">
+                                <i class="fab fa-twitter-square fa-2x fa-fw"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#">
+                                <i class="fab fa-instagram fa-2x fa-fw"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="bootstrap_template/vendor/jquery/jquery.min.js"></script>
+    <script src="bootstrap_template/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/signup.js"></script>
