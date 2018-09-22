@@ -33,16 +33,4 @@ module.exports = function (app) {
             res.json(dbPost);
         });
     });
-
-    app.put("/api/posts", function (req, res) {
-        db.Post.update(
-            req.body,
-            {
-                where: {
-                    id: req.body.id
-                }
-            }).then(function (dbPost) {
-                res.json(dbPost);
-            });
-    });
-};
+}
