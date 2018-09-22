@@ -1,10 +1,7 @@
 $(document).ready(function () {
-    // Get references to page elements
     var postText = $(".post");
     var messageText = $(".message");
     var respond = $("#respond");
-
-    // variables for posts and messages
     var posts;
     var messages;
 
@@ -49,6 +46,19 @@ $(document).ready(function () {
         deletePost(currentPost.id);
     }
 
+    $(document).on("click", "button.respond", handleMessagePost);
+
+    // function for AJAX to delete posts
+    function messagePost(id) {
+        $.ajax({
+            method: "POST",
+            url: "/api/message/" + id
+        })
+            .then(function () {
+                //
+            });
+    }
+
     // appends post HTML to bulletin board
     function initializePost() {
         postText.empty();
@@ -59,8 +69,7 @@ $(document).ready(function () {
         postText.append(postsToAdd);
     }
 
-    // get messages for a specific recipient
-    // Looks for a query param in the url for user_id
+    // get messages for a specific recipient - looks for a query param in the url for user_id
     var url = window.location.search;
     var recipientId;
     if (url.indexOf("?recipient_id=") !== -1) {
@@ -85,7 +94,7 @@ $(document).ready(function () {
     // build post HTML
     function createNewRow(post) {
         var newPostBody = $("<div>");
-        var newPostUser = $("<h2>" + post.User.name + "</h2>");
+        var newPostUser = $("<h2><a>" + post.User.name + "</a></h2>");
         var newPostText = $("<h2>" + post.User.text + "</h2>");
         var newPostDate = $("<small>");
         var formattedDate = new Date(post.createdAt);
@@ -95,7 +104,7 @@ $(document).ready(function () {
         deleteBtn.addClass("delete btn btn-danger");
         var responseBtn = $("<button>");
         responseBtn.text("Respond");
-        responseBtn.addClass("delete btn btn-danger");
+        responseBtn.addClass("delete btn btn-primary");
 
         newPostBody.text(post.body);
         newPostDate.text(formattedDate);
@@ -121,6 +130,21 @@ $(document).ready(function () {
         devoid.css({ "text-align": "center", "margin-top": "40px" });
         devoid.html("No Wind.");
         postText.append(devoid);
+    }
+
+    // creates new post object
+    var newPost = {
+        text: bodyInput
+            .val()
+            .trim(),
+        AuthorId: authorSelect.val()
+    };
+
+    // submits new post
+    function submitPost(post) {
+        $.post("/api/posts", post, function () {
+            window.location.href = "/board";
+        });
     }
 
 });

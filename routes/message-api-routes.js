@@ -32,16 +32,4 @@ module.exports = function (app) {
             res.json(dbMessage);
         });
     });
-
-    app.put("/api/message", function (req, res) {
-        db.Message.update(
-            req.body,
-            {
-                where: {
-                    id: req.body.id
-                }
-            }).then(function (dbMessage) {
-                res.json(dbMessage);
-            });
-    });
-};
+}
