@@ -21,11 +21,11 @@ module.exports = function (app) {
     db.User.create({
       userName: req.body.userName,
       password: req.body.password,
-      email: req.body.email,
-      bio: req.body.bio
+      //email: req.body.email,
+      userBio: req.body.bioInput
     })
       .then(function () {
-        res.redirect(307, "/api/login");
+        res.redirect(307, "/board");
       })
       .catch(function (err) {
         console.log(err);
