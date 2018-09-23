@@ -38,6 +38,7 @@ $(document).ready(function () {
 
     // ++++++++++ POPULATE INBOX  ++++++++++
     // get messages for a specific recipient - looks for a query param for a user_id
+
     var url = window.location.search;
     var recipientId;
     if (url.indexOf("?recipient_id=") !== -1) {
@@ -61,9 +62,11 @@ $(document).ready(function () {
         });
     }
 
+
     // ++++++++++  POST CREATION BUTTON  ++++++++++
     // on click event for post creation button
     $(document).on("submit", "#postinput", handlePostSubmit);
+
 
     function handlePostSubmit(event) {
         event.preventDefault();
@@ -110,3 +113,4 @@ $(document).ready(function () {
     }
 
 });
+
