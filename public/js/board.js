@@ -6,7 +6,7 @@ $(document).ready(function () {
     var messages;
 
     getPosts();
-    getMessages();
+    //getMessages();
 
     // ++++++++++  POPULATE BULLETIN BOARD  ++++++++++
     // function for retrieving posts and getting them ready to be rendered to the page
@@ -66,48 +66,50 @@ $(document).ready(function () {
         messageText.append("No Messages");
     }
 
-    // function for creating a new message row 
-    function createMessageRow(messageData) {
-        var newTr = $("<tr>");
-        newTr.data("message", messageData);
-        newTr.append("<td>" + messageData.text + "</td>");
-        newTr.append("<td><a href='/bio?user_id=" + messageData.id + "'>Respond</a></td>");
-        return newTr;
-    }
+    // // function for creating a new message row 
+    // function createMessageRow(messageData) {
+    //     var newTr = $("<tr>");
+    //     newTr.data("message", messageData);
+    //     newTr.append("<td>" + messageData.text + "</td>");
+    //     newTr.append("<td><a href='/bio?user_id=" + messageData.id + "'>Respond</a></td>");
+    //     return newTr;
+    // }
 
-    // function for retrieving messages and getting them ready to be rendered to the page
-    function getMessages() {
-        $.get("/api/messages", function (data) {
-            var rowsToAdd = [];
-            for (var i = 0; i < data.length; i++) {
-                rowsToAdd.push(createMessageRow(data[i]));
-            }
-        });
-    }
+    // // function for retrieving messages and getting them ready to be rendered to the page
+    // function getMessages() {
+    //     $.get("/api/messages", function (data) {
+    //         var rowsToAdd = [];
+    //         for (var i = 0; i < data.length; i++) {
+    //             rowsToAdd.push(createMessageRow(data[i]));
+    //         }
+    //     });
+    // }
 
-    // function for rendering the list of messages to the page
-    function renderMessageText(rows) {
-        messageText.children().not(":last").remove();
-        //console.log(rows);
-        postText.prepend(rows);
-    }
+    // // function for rendering the list of messages to the page
+    // function renderMessageText(rows) {
+    //     messageText.children().not(":last").remove();
+    //     //console.log(rows);
+    //     postText.prepend(rows);
+    // }
 
     // ++++++++++  POST CREATION BUTTON  ++++++++++
     // on click event for post creation button
-    $(document).on("submit", "#postinput", handlePostSubmit);
+    $(document).on("click", "#postbutton", handlePostSubmit);
 
     function handlePostSubmit(event) {
+        console.log('clicked');
         event.preventDefault();
         if (!postinput.val().trim()) {
             return;
         }
         // creates new post object
-        newPost({
+        var post = {
             text: postinput
                 .val()
                 .trim(),
-        });
-        console.log(postinput);
+        };
+        newPost(post);
+        console.log("postinput", postinput);
     }
 
     // function calls getPosts upon completion

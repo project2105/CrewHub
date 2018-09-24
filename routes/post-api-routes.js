@@ -9,15 +9,16 @@ module.exports = function (app) {
             query.UserId = req.query.user_id;
         }
         db.Post.findAll({
-            where: query,
             include: [db.User]
         }).then(function (dbPost) {
+            console.log("dbPost running");
             res.json(dbPost);
         });
     });
 
     // route to create a bulletin board post
     app.post("/api/posts", function (req, res) {
+        console.log(req.body.text);
         db.Post.create(req.body).then(function (dbPost) {
             res.json(dbPost);
         });
