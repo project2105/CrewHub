@@ -4,21 +4,16 @@ module.exports = function (sequelize, DataTypes) {
         recipientId: DataTypes.INTEGER
     });
 
-    Message.associate = function (models) {
-        Message.belongsTo(models.User, {
-            foreignKey: {
-                allowNull: false
-            }
-        });
-    };
+    // Message.associate = function (models) {
+    //     Message.belongsTo(models.User, {
 
-    Message.associate = function (models) {
-        Message.belongsTo(models.Post, {
-            foreignKey: {
-                allowNull: false
-            }
-        });
-    };
+    //     });
+    // };
+
+    // Message.associate = function (models) {
+    //     Message.belongsTo(models.Post, {
+    //     });
+    // };
 
     return Message;
 };
