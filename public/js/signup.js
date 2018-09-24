@@ -35,7 +35,7 @@ $(document).ready(function () {
             bioInput: bioInput
 
         }).then(function (data) {
-            window.location.replace(data);
+            window.location.replace = data;
             // If there's an error, handle it by throwing up a boostrap alert
         }).catch(handleLoginErr);
     }
