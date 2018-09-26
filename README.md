@@ -2,26 +2,38 @@
 
 A bulletin board app for Chicago Area sailing enthusiasts
 
+
 Live Link
 
 https://gentle-thicket-96523.herokuapp.com
 
+
 Built With
 
 HTML
+
 CSS/Bootstrap
+
 JavaScript/jQuery
+
 Node.js
-NPM packages 
+
+NPM packages:
 	Sequelie, Express, Mysql
+	
 Passport
+
 
 Authors
 
 Nico Cueva,
+
 Zach Shult,
+
 Jorge Becerril Hernandez, and
+
 Paul Jensen
+
 
 Acknowledgments
 
