@@ -26,6 +26,9 @@ Paul Jensen
 Acknowledgments
 
 startbootstrap.com – bootstrap template
+
 openclipart.org – clip art for nautical flags
+
 unsplash.com - photos
+
 Guy Fieri – just because
