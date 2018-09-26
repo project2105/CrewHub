@@ -18,9 +18,9 @@ Passport
 
 Authors
 
-Nico Cueva
-Zach Shult
-Jorge Becerril Hernandez
+Nico Cueva,
+Zach Shult,
+Jorge Becerril Hernandez, and
 Paul Jensen
 
 Acknowledgments
