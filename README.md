@@ -3,12 +3,12 @@
 A bulletin board app for Chicago Area sailing enthusiasts
 
 
-Live Link
+#Live Link
 
 https://gentle-thicket-96523.herokuapp.com
 
 
-Built With
+#Built With
 
 HTML
 
@@ -24,7 +24,7 @@ NPM packages:
 Passport
 
 
-Authors
+#Authors
 
 Nico Cueva,
 
@@ -35,7 +35,7 @@ Jorge Becerril Hernandez, and
 Paul Jensen
 
 
-Acknowledgments
+#Acknowledgments
 
 startbootstrap.com – bootstrap template
 
