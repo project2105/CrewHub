@@ -1,4 +1,4 @@
-## Crew Hub
+# Crew Hub
 
 A bulletin board app for Chicago Area sailing enthusiasts
 
