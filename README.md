@@ -28,14 +28,21 @@ Passport
 
 ## Authors
 
-Nico Cueva,
+Nico Cueva
+https://www.linkedin.com/in/nicolas-nico-cueva-19b4a15a/
+https://github.com/nicolascueva/nicolascueva.github.io
 
-Zach Shult,
+Zach Shult
+https://www.linkedin.com/in/zach-shulterbrandt-908354143/
+https://github.com/zachshult124
 
-Jorge Becerril Hernandez, and
+Jorge Becerril Hernandez
+https://www.linkedin.com/in/jorge-becerril-hernandez-0a3983168
+https://github.com/JorgeBH9
 
 Paul Jensen
-
+https://www.linkedin.com/in/paul-jensen-9b1a6311/
+https://github.com/project2105
 
 ## Acknowledgments
 
