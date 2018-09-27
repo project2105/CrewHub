@@ -3,6 +3,7 @@
 A bulletin board app for Chicago Area sailing enthusiasts
 
 ![Crew Hub Logo](/public/assets/CH flags.png)
+Format: ![Alt Text](url)
 
 ## Live Link 
 
