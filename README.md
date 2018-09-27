@@ -2,7 +2,7 @@
 
 A bulletin board app for Chicago Area sailing enthusiasts
 
-![Crew Hub Logo](/images/logo.png)
+![Crew Hub Logo](/public/assets/CH Flags.png)
 Format: ![Nautical Flag Logo](url)
 
 ## Live Link
